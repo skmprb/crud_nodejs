@@ -1,0 +1,48 @@
+<% for(var i = 0; i < users.length; i++) {%>
+
+<tr style="margin-top: 10px;">
+    <!-- <td><%= i+1 %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].email %></td>
+    <td><%= users[i].gender %></td>
+    <td><%= users[i].status %></td>
+    <td>
+        <a href="/update-user?id=<%= users[i]._id %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= users[i]._id %>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td> -->
+    
+</tr>
+<tr >
+    <td colspan="4" rowspan="3" style="font-size: 60px;"><%= users[i].name %></td>
+    <td colspan="2"><%= users[i].email %></td>
+</tr>
+<tr >
+    <td><%= users[i].birthday %></td>
+    <td><%= users[i].gender %></td>
+</tr>
+<tr >
+    <td colspan="1"><%= users[i].status %></td>
+    <td colspan="1">
+        <a href="/update-user?id=<%= users[i]._id %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= users[i]._id %>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<tr>
+    
+    <td colspan="2"><b>street:</b><%= users[i].street %></td>
+    <td><b>city:</b><%= users[i].city %></td>
+    <td><b>state:</b><%= users[i].state %></td>
+    <td><b>zip:</b><%= users[i].zip %></td>
+    <td><b>country:</b><%= users[i].country %></td>
+</tr>
+
+
+<% } %>

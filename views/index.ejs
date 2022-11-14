@@ -1,0 +1,37 @@
+
+<%- include('include/_header')%>
+
+
+<main id="site-main">
+    <div class="head">
+        <h2>About our employees....</h2>
+    </div>
+    <div class="container">
+        <div class="box-nav-d-flex-justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New User</span>
+            </a>
+        </div>
+
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/_show')%>
+                </tbody>
+                <br/>
+            </table>
+        </form>
+    </div>
+</main>
+
+<%- include('include/_fotter')%>
